@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- metatags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#343a40">
+
+    <!-- SEO related -->
+    <meta name="description"
+          content="Welcome to blockchain development. Your ICO is over, hype is drying up. Take the private keys, drain everything.">
+    <meta name="keywords"
+          content="Ethereum, F3D+, Fomo3D, Proof of Weak Hands, P3D, PoWH3D, Cryptocurrency, ICO, Parody, Satire, Gambling, Jackpot, Lottery, Referral, Passive Income, UBI">
+    <meta name="author" content="Team JUST">
+
+    <!-- open graph -->
+    <meta property="og:title" content="F3D+: Your Personal Exit Scam">
+    <meta property="og:description"
+          content="Welcome to blockchain development. Your ICO is over, hype is drying up. Take the private keys, drain everything.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://exitscam.me/">
+    <meta property="og:image" content="https://exitscam.me/img/og_logo.png">
+    <meta property="og:image:width" content="400">
+    <meta property="og:iamge:height" content="400">
+
+    <!-- icons -->
+    <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-114.png">
+    <link rel="apple-touch-icon" sized="72x72" href="../img/apple-72.png">
+    <link rel="apple-touch-icon" href="../img/apple.png">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/custom.css">
+    <link rel="stylesheet" href="./css/alertify.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/ghostframe.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,400" rel="stylesheet">
+    <script src="./js/jquery-3.2.0.min.js"></script>
+
+    <!--
+     .d888                              .d8888b.      888
+    d88P"                              d88P  Y88b     888
+    888                                     .d88P     888
+    888888 .d88b. 88888b.d88b.  .d88b.     8888"  .d88888
+    888   d88""88b888 "888 "88bd88""88b     "Y8b.d88" 888
+    888   888  888888  888  888888  888888    888888  888
+    888   Y88..88P888  888  888Y88..88PY88b  d88PY88b 888
+    888    "Y88P" 888  888  888 "Y88P"  "Y8888P"  "Y88888
+    -->
+
+    <title>最后赢家</title>
+</head>
+<body>
+<module-bash>
+</module-bash>
+<!-- <div class="blurryboy"></div> -->
+<div id="main-wrapper">
+    <!-- navigation -->
+    <header class="topbar fixed-top">
+        <module-navbar>
+        </module-navbar>
+    </header>
+    <!-- /navigation -->
+    <!-- noscript message -->
+    <noscript>
+        <div class="row">
+            <div class="col">
+                <div class="alert alert-purp pulse text-center text-light" role="alert" style="margin-top:8rem;">Please
+                    enable Javascript to play F3D+
+                </div>
+            </div>
+        </div>
+    </noscript>
+    <!-- /noscript -->
+    <!-- modal loading -->
+    <!-- toggle with jQuery('#loading').modal({backdrop: 'static', keyboard: false})
+    this makes it impossible to close modal by clicking outside the box -->
+    <div class="modal fade" id="loading" tabindex="-1" role="dialog" aria-hidden="true" style="z-index: 99999999;">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-body" style="padding-top:1.5rem; padding-bottom:1.5rem;">
+                    <div class="row justify-content-between">
+                        <div class="col-auto">
+                            检查Metamask...
+                        </div>
+                        <div class="col-2">
+                            <div class="miniloader"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /modal loading -->
+    <!-- modal vanity -->
+    <div class="modal fade" id="vanity" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-body" style="padding-top:1.5rem; padding-bottom:1.5rem;">
+
+                    <div class="row">
+                        <div class="col">
+                            <p class="lead nomarginb">把你的名字写入区块链！</p>
+                        </div>
+                        <div class="col-auto">
+                            <p class="text-right nomarginb">
+                                <a href="#" class="closemodal">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <button class="btn btn-outline-yel" type="button" id="randomName">
+                                                随机
+                                            </button>
+                                        </div>
+                                        <input class="form-control text-center" type="text" placeholder="type here"
+                                               id="nameInput">
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="small">
+                                <br>
+                                名字必须遵从以下规则:<br>
+                                -不可重复<br>
+                                -至多32字符<br>
+                                -A-Z (小写字母)<br>
+                                -名字不能使用 <i>纯</i> 数字, 但是数字是可以使用的<br>
+                                -不可使用特殊字符<br>
+                                -字符之间不得使用超过一个空格<br>
+                                <br>
+                                如果交易失败，则说明无法正确满足其中至少一个标准。 <br>
+                                <br>
+                                名称是永久性的(用于推广链接)。您可以拥有任意数量的名称，但只有您最近的名字才会显示在排行榜/游戏用户界面上。<br><br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <button class="btn btn-gold btn-block btn-lg" id="namePurchase"><i
+                                    class="fab fa-ethereum"></i> 支付 0.01 ETH 购买
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /modal vanity -->
+    <!--
+    <div id="quotes" class="topbar fixed-top text-light bg-dark jumboshade" style="z-index:99;">
+      <div class="container">
+        <div class="row">
+          <div class="col-auto">
+            <i class="fas fa-stopwatch"></i> <span class="boxtimer lead small">00:00:00</span>
+          </div>
+          <div class="col-auto yourkeys">
+            <i class="fas fa-key"></i> <span class="lead small">0000</span>
+          </div>
+          <div class="col col-2 yourrank">
+            <i class="fas fa-list-ol"></i> <span></span>
+          </div>
+          <div class="col afflink" if={$this.isCEO}>
+            <i class="fas fa-link"></i> <span class="lead small"></span>
+          </div>
+          <div class="col text-right">
+            <span class="lead small qTarget">Loading Memes</span>
+          </div>
+        </div>
+      </div> -->
+</div>
+<div id="spacer" class="spacer"></div>
+<!-- main content (exchangeable) -->
+<module-template>
+</module-template>
+<module-airdrop>
+</module-airdrop>
+<module-modal>
+</module-modal>
+<!-- /main content -->
+</div>
+
+<!-- phishing warning -->
+<div class="modal" role="dialog" id="phishingWarning">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content bg-dark text-light">
+            <div class="modal-header">
+                <h5 class="modal-title">提示!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <p>以太坊奖金分红游戏(开发者:老中医)</p>
+                <p>1.每轮最后买入key的可以拿走奖金池</p>
+                <p>2.凡是持有key的都可以获得分红</p>
+                <p>3.四个小组供你选择，不同小组分红模式不一样</p>
+                <p><a href="http://qqtoo.cn:3069" style="text-decoration:underline;color:red">手机怎么玩?</a> </p>
+                <hr>
+                <p><a href="https://etherscan.io/address/0x9a44a4451c7e7f3af84ad9158f09ee2da1cc6c83"  style="text-decoration:underline;color:red">
+                    智能合约代码</a></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-block btn-lg btn-secondary btn-purp" data-dismiss="modal">知道了!
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- owo -->
+<div class="animation">
+    <img src="img/snorting_in_progress_pepe.png" height="150px">
+</div>
+
+<script src="js/clipboard.min.js"></script>
+<script src="js/alertify.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/fontawesome-all.min.js"></script>
+<script>
+    if (!localStorage.getItem("seenWarning")) {
+        // Start phishing warning on load
+        jQuery("#phishingWarning").modal()
+
+        localStorage.setItem("seenWarning", true)
+    }
+
+
+    // Vanity modal
+    jQuery(".vanity").click(function () {
+        jQuery('#vanity').modal()
+    })
+    jQuery(".closemodal").click(function () {
+        jQuery('#vanity').modal('hide')
+    })
+
+    // Random Name generator
+    jQuery('#randomName').click(function () {
+        jQuery('#nameInput').val(namegen.generate());
+    })
+
+    /* Switch for low graphics mode
+    if(window.localStorage.length > 0){
+      if(localStorage['fancy'] == "false"){
+        jQuery("#fancyswitch").prop("checked", false);
+        var toggled = false
+      }
+      else{
+        jQuery("#fancyswitch").prop("checked", true);
+        var toggled = true
+      }
+    }
+    function graphicslow(){
+      jQuery('#hdgraphics').toggle();
+      toggled = !toggled
+      localStorage.setItem('fancy', toggled);
+    }
+
+    // Switch to toggle tutorials
+    if(window.localStorage.length > 0){
+      if(localStorage['tutorials'] == "false"){
+        jQuery("#tutorialswitch").prop("checked", false);
+        var toggled2 = false
+      }
+      else{
+        jQuery("#tutorialswitch").prop("checked", true);
+        var toggled2 = true
+      }
+    }*/
+
+</script>
+<script src="js/bundle.js"></script>
+</body>
+</html>
